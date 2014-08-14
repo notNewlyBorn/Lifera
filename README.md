@@ -1,4 +1,7 @@
-Lifera
-======
+# User Authentication With Passport.js
 
-simple nodejs app with expressjs and bootstrap
+- In this post I’ll demonstrate how to add user authentication to Node.js with Passport.js. 
+- View the blog post here: http://mherman.org/blog/2013/11/11/user-authentication-with-passport-dot-js/
+
+
+

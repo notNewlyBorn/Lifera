@@ -1,0 +1,46 @@
+extends layout
+    
+block content
+  .container              
+    h1 LifeEra
+    p#lead You are logged in as #{user.username}
+    
+    #wrapper
+        h2 User Info
+        p#lead
+            strong Name:
+            |  <span id='userInfoName'>#{user.username}</span>
+            br
+            strong Age:
+            |  <span id='userInfoAge'></span>
+            br
+            strong Gender:
+            |  <span id='userInfoGender'></span>
+            br
+
+            .panel
+                .panel-heading
+                    h4.panel-title
+                        a(data-toggle='collapse', data-parent='#accordion', href='#collapseOne')
+                            | Show status
+                    br
+                #collapseOne.panel-collapse.collapse
+                    .panel-body
+                        each status in statusesObj
+                            ul.list-group
+                                li.list-group-item #{status.content}
+
+    br
+    #wrapper
+        p.lead Write a new status here
+        form(role='form', action="/status",id="postNewStatus", method="post", style='max-width: 300px;')
+          .form-group
+            input.form-control(type='text', id="newStatus", name="statuscontent", placeholder='write something here')
+          button.btn.btn-default(type='submit') Write
+          &nbsp;
+          a(href='/userPage')
+            button.btn.btn-primary(type="button") Cancel
+        br
+        a(href="/logout") Logout
+  
+  

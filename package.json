@@ -1,0 +1,35 @@
+{
+  "name": "Lifeera",
+  "version": "0.0.1",
+  "description": "express app using NodeJS and twitter bootstrap 3",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "make test"
+  },
+  "repository": {
+    "type": "",
+    "url": ""
+  },
+  "author": "Nafis Karim <nafis_20@yahoo.com>",
+  "license": "MIT",
+  "dependencies": {
+    "express": "*",
+    "jade": "*",
+    "passport": "*",
+    "passport-local": "*",
+    "mongoose": "*",
+    "passport-local-mongoose": "*",
+    "connect-flash" : "~0.1.1",   
+    "bcrypt-nodejs" : "latest",
+    "mocha": "*",
+    "chai": "*",
+    "should": "*",
+    "socket.io": "*",
+
+    "morgan": "~1.0.0",
+    "body-parser": "~1.0.0",
+    "cookie-parser": "~1.0.0",
+    "express-session": "~1.0.0"
+  }
+}
