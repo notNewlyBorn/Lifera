@@ -1,0 +1,14 @@
+extends layout
+block content
+    .container
+        h1 LifeEra
+
+        p.lead You are logged in as #{user.username}
+        br
+        p.lead: a(href='/userPage') Go to your profile
+        br
+        p.lead Checkout other user's profile
+        // each user in usersObj
+        ul.list-group
+            li.list-group-item rajib
+
