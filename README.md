@@ -1,2 +1,2 @@
-A simple nodejs app with express and bootstrap
+ Nodejs app with express and bootstrap
 
